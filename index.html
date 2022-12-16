@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <title>Nhan Khang Le</title>
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+ <body>
+     <!-- navigation -->
+  <div class="navbar">
+      <h2 id="navbar-title">Nhan Khang Le</h2>
+      <nav>
+        <a href="./pages/stories.html">About me</a>
+      </nav>
+  </div>
+ <!-- presentation -->
+  <div id="presentation">
+    <h2> Welcome to my first presentation </h2>
+    <a href="https://www.linkedin.com/in/nhan-khang-le-6905b4228/">
+      <img id="presentation-image" src="https://media.licdn.com/dms/image/D5603AQEPljp0raV73g/profile-displayphoto-shrink_200_200/0/1666165557874?e=1676505600&v=beta&t=jLc9cLvNlZ31WqIuJWaYyHMr-WT29O6tR3o_cHuQJU4">
+    </a>
+    <p class="specialP"> 
+      I'm originally from VietNam and still new to the United States. I'm 26 years old, and my passion is more profound in understanding technology and its workings. It's my pleasure to be in the software engineering course, and I hope we can have a better career when we graduate. 
+   </p>   
+  </div>
+ <!-- your projects and interests -->
+  <div> 
+    <h2> Favorites Projects and interests</h2>
+   <ol>
+     <li> Have some good website projects </li>
+     <li> Try to learn something new everyday</li>
+     <li> interests in how software operation </li>
+   </ol>
+    <ol  start="4"> <!--list item starting from 4-->
+      <li> Watch MCU movie  </li>
+      <li> Listen to music </li>
+      <li> English football </li>
+    </ol>
+  </div>
+    <!-- Form -->
+   <div class="form">
+    <form>
+      <h2>Feel free to have some Feedback on my presentation</h3>
+        <p class="form-text">YourName:</p> 
+        <input id="input1" type="text" name="yourname"><br>
+        <p class="form-text">Feedback:</p> 
+        <input id="input2" type="text" name="Feedback" placeholder="your feedback"><br>
+        <button  type="submit" name="submit" value="submit">submit</button>
+    </form> 
+  </div>
+  <h3>Thank you!</h3>
+  <!-- javascript -->
+  <script>
+    //this event only trigger when button got click. By adding a name of the function inside this listener will help prevent the function get call when we refreshthe website
+    document.querySelector("button").addEventListener("click", handleClick);
+    function handleClick(){
+      alert("Thank you for your feedback, and thank you all for listening")
+    }
+  </script>
+ </body>
+</html>

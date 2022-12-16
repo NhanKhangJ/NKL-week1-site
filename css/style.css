@@ -1,0 +1,150 @@
+ /* body */
+body{
+    background-color: #72FFFF; 
+    text-align: center;
+    margin: 0%; /*make sure notthing cover around the body of the website */
+    padding: 0%;
+  }
+  p{
+    color: brown;
+    font-size: 20px;
+    font-style: italic;
+  }
+  h2{
+   color: #FF4949;
+  }
+ /* navigation bar */
+  .navbar{
+    position: sticky; /* make this bar stay on the top when we scroll down*/
+    display: flex; /*this will help styling the navbar with the title and the navigation link*/
+    top:0%;
+    width: 100%; /*take 100% width of the pages */ 
+    height: 75px;
+    background-color: #5800FF;
+  }
+  #navbar-title{
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 5%; /*adjust the navbar position and look more responsive in smaller windows  */
+  }
+  nav{
+    position: absolute; /*make the positon absolute to the navbar div so we can change position of it*/
+    margin-top: 30px;
+    right: 5%; /*this property effects only positoned elements(absolute, relative, sticky) not static*/ 
+  }
+  a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none; /*prevent the underline*/
+    color: #72FFFF;
+  }
+ /* presentation */
+ #presentation{
+  margin: auto 10%; /*center this dive with margin-top and bottom is auto, and left and right are 10%*/
+ }
+ #presentation-image{
+  border-radius: 50%; /*make the image to be rounded*/
+  height: 300px;
+}
+ .specialP{ /*special paragraph about me*/
+  font-family: monospace;
+  color: #51834d;
+}
+/*list */
+  ol{
+    display: inline-block; /*make two list horizontaly with mobile version */
+    width: 300px;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left; /*make the bullet stick to the text*/
+    margin: 0% auto;
+  }
+  li{
+    height: 40px;
+  }
+/* form */
+.form{
+  clear: left;
+}
+.form-text{
+  color: #5800FF;
+  font-style: italic;
+  margin: 0%; /*help the text stick to the input box*/
+}
+#input1{
+  height: 25px;
+  border-radius: 5%;
+  border: 0ch;
+}
+#input2{
+  width: 300px;
+  height: 50px;
+  border-radius: 5%;
+  border: 0ch;
+}
+button{
+  background-color: whitesmoke;
+  height: 30px;
+  margin-top: 10px;
+  font: 1em sans-serif; /*1em= 16px*/
+}
+button[type=submit]:hover{ /*hover over will change the color of the button */
+	background-color:blue;
+  transition: 0.3s; /*transitions allows you to change property values smoothly, over a given duration.  */
+  transform: scale(1.1); /*scale this button with (widht.height) */
+ }
+
+ /* stories page styling */
+
+ /* facts */
+ #facts{
+  margin: auto 10%;
+  overflow: auto; /*prevent the image to be overflowed of the nested div page 11 of learnlayout.com */
+}
+#facts-image{
+  float: left; /* the text will float to the left of the image */
+  height: 300px;
+  border-radius: 5%;
+  margin-right: 20px; /*prevent the text stick to close to the images */
+}
+@media screen and (max-width:600px) {
+  .specialP{
+    clear:left; /*no more floating */
+  }
+  #facts-image{ /* chang the style of this two element when the width is less or equal to 600px*/
+    text-align: center; 
+    float: none;
+    margin-right: 0%;
+  } 
+}
+/* hobby */
+#hobbies{
+  clear: left; /*avoid floating with clear property */
+} 
+table{
+  width:100%;
+}
+.hobbies-image{ /*Make sure all the imgage are in the same size*/
+  width: auto;
+  height: 110px;
+}
+@media screen and (max-width:600px) {
+ .hobbies-image{
+  width: 50%;
+  height: 80px;
+ }
+}
+/* video area */
+.videoSection{
+  padding-bottom:37.5%; /*this will decide how big the video will take place in your website because it has take all the height and width of this div*/
+  position:relative; 
+  display:block; 
+  width: 100%;
+}
+.video{
+  margin-top: 30px;
+  position:absolute; /*the video positon will be absolute and take the whole heigth and width of VideoSection div*/ 
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
